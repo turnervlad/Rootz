@@ -1,0 +1,48 @@
+@import "../../../consts/colors";
+
+header.desktop {
+	margin: 10px 50px;
+	height: 112px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 4px solid $base-black;
+	& button {
+		width: 145px;
+		height: 48px;
+		background-color: white;
+		color: $base-black;
+		border-radius: 30px;
+		font-weight: 700;
+		border: none;
+	}
+	& ul {
+		display: flex;
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		& li {
+			padding: 0 50px;
+			& a {
+				color: $base-black;
+				opacity: 0.6;
+				text-decoration: none;
+			}
+			& a:hover {
+				opacity: 1;
+			}
+		}
+	}
+}
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+	header.desktop ul li {
+		padding: 0 20px;
+	}
+}
+
+@media screen and (max-device-width: 768px) {
+	header.desktop {
+		display: none;
+	}
+}
