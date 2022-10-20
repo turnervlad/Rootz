@@ -2,7 +2,7 @@
 
 .contact {
     display: flex;
-    background-color: $base-orange;
+    background-color: #FFBD9E;
     width: 100%;
     align-items: center;
     justify-content: space-around;
@@ -22,7 +22,6 @@
         @media screen and (max-device-width: 768px) {
             width: 80%;
             max-width: 420px;
-            // padding: 10%;
         }
     }
     & .titleWrap {

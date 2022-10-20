@@ -3,56 +3,37 @@
     max-width: 1120px;
 	width: 100%;
     margin: 0 auto;
-    // height: 600px;
     position: relative;
-    // &   .slick-prev, .slick-next {
-    //     position: absolute;
-    //     top: 50%;
-    //     color: red !important;
-    //   }
-    // & .slick-prev1 {
-    //     width: 50px;
-    //     height: 50px;
-    //     color: red;
-    //     left: 100px;
-    // }
     & .sliderItem {
+        // padding-top: 100px;
         // border: 1px solid red;
         height: 400px;
-        // width: 600px;
-
-        // max-width: 400px;
-        // width: 100%;
-        // margin: 0 50px;
-        // height: 100%;
-        
-        // display: flex;
-        // justify-content: center;
+        // padding: 0 50px;
         & > div {
-        // border: 1px solid blue;
-        margin:0 50px;
-        padding: 0 50px;
-        // width: 600px;
-        width: 100%;
+            // border: 1px solid blue;
+            // margin:0 100px;
+            // padding: 0 50px;
+            // width: 100%;
+            // min-width: 350px;
             height: 100%;
             display: flex;
-            // flex-wrap: nowrap;
             justify-content: center;
             align-items: center;
             & > img {
-                // max-width: 300px;
+                max-width: 300px;
                 // width: 100%;
-                @media screen and (max-device-width: 500px) {
-                    width: 90%;
+                @media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+                    width: 80%;
                     // padding: 0 30px;
+                }
+                @media screen and (max-device-width: 767px) {
+                    width: 80%;
                 }
             }
         }
     }
     & .buttons {
         margin-bottom: 70px;
-        // text-align: center;
-        // vertical-align: middle;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -61,7 +42,6 @@
         & > .button {
             margin:0 20px;
             height: 15px;
-
         }
         & > span {
             margin: 0 5px;

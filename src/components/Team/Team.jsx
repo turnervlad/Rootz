@@ -1,6 +1,4 @@
 import React from 'react'
-// import Vector1 from '../../img/Vector1.svg';
-// import Vector2 from '../../img/Vector.svg';
 import TeamImg from '../../img/Team.png';
 import TeamImgMobile from '../../img/Team-mobile.png';
 import Contact from './Contact/Contact';

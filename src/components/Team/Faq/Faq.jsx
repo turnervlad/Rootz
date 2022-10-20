@@ -4,7 +4,6 @@ import style from './Faq.module.scss';
 
 export default function Faq() {
     const {faq, left, right, title, description} = style;
-    // const [firstAdvantage, setFirstAdvantage] = useState(true);
     const [advantages, setAdvantages] = useState({
         first: true,
         second: false,

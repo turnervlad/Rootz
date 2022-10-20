@@ -4,14 +4,11 @@
 	display: flex;
 	justify-content: space-between;
 	padding: 5%;
-	// padding: 5%;
 	align-items: baseline;
-	// margin: 0 5%;
 	margin: 0 auto;
     @media screen and (max-device-width: 768px) {
 		flex-direction: column;
 	}
-
 	& .contact {
 		width: 42%;
 		@media screen and (max-device-width: 768px) {
@@ -26,8 +23,6 @@
 			margin-bottom: 40px;
 		}
 	}
-
-
 	& .right {
 		display: flex;
 		width: 58%;
@@ -38,25 +33,20 @@
 		& > div > .title {
 			margin-bottom: 40px;
 		}
-
 	}
-
 	& .contact .title {
 		font-size: 34px;
 		font-weight: 700;
 	}
-
 	& .headquarters .title {
 		font-size: 20px;
 		font-weight: 700;
 	}
-
 	& .social {
 		& .title {
 			font-size: 20px;
 			font-weight: 700;
 		}
-
 		& img {
 			margin-right: 10px;
 		}

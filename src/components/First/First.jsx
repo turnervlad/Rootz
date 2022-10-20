@@ -16,4 +16,4 @@ function First() {
     )
 }
 
-export default First
+export default First;

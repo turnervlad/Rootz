@@ -1,27 +1,12 @@
 import React, { useState } from 'react'
 import Vector from '../../../img/Vector.png';
 import ParrotDesktop from '../../../img/Parrot-desktop.png';
-import ParrotMobile from '../../../img/Parrot-mobile.png';
 import Nature from '../../../img/Headline.png';
 import style from './Nature.module.scss';
 
 export default function NatureComp() {
-    // console.log(window.innerWidth);
     const [place, setPlace] = useState('');
-    const { natureLeft, natureImg, search, natureRight, parrotDesktop, parrotMobile } = style;
-    // const [width, setWidth] = useState(window.innerWidth);
-
-    // function handleWindowSizeChange() {
-    //     setWidth(window.innerWidth);
-    // }
-    // useEffect(() => {
-    //     window.addEventListener('resize', handleWindowSizeChange);
-    //     return () => {
-    //         window.removeEventListener('resize', handleWindowSizeChange);
-    //     }
-    // }, []);
-
-    // const isMobile = width <= 768;
+    const { natureLeft, natureImg, search, natureRight, parrotDesktop } = style;
     return (
         <>
             <section className={style.nature}>
@@ -42,7 +27,6 @@ export default function NatureComp() {
                 </div>
                 <div className={natureRight}>
                     <img className={parrotDesktop} src={ParrotDesktop} alt='parrotdesktop' />
-                    <img className={parrotMobile} src={ParrotMobile} alt='parrotmobile' />
                 </div>
             </section>
         </>
